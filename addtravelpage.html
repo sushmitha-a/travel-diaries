@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">My Travel Diaries</a>
+      </div>
+    </nav>
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+            <form id="myform" class="form-group" style="text-align:left;">
+              User : <input type="text" class="form-control" name="User" style="background-color:silver;width:unset;">
+              City : <input type="text" class="form-control" name="City" style="background-color:silver;width:unset;">
+              Description : <textarea class="form-control" name="Desc" style="background-color:silver;"></textarea>
+              Add images :
+            </br>
+               <input type = "file" value = "upload" id="fileButton" />
+             </br>
+               <progress value="0" max="100" id="uploader">0%</progress>
+            <button class="btn btn-default" onclick="submitClick()" width= "max-content">SAVE</button>
+              <p class="intro-text">"The tans will fade but the memories will last"
+               </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+  	apiKey: "AIzaSyBRmWNR6uqesq-gfThF14oN207Spo60f38",
+  	authDomain: "my-travel-diaries.firebaseapp.com",
+  	databaseURL: "https://my-travel-diaries.firebaseio.com",
+  	projectId: "my-travel-diaries",
+  	storageBucket: "my-travel-diaries.appspot.com",
+  	messagingSenderId: "691260266228"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+  <script src="js/addtravel.js"></script>
+  </body>
+
+</html>
